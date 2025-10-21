@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFriend</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 GameFriend</h1>
+            <p>Играй с друзьями на валюту!</p>
+        </header>
+
+        <section class="profile">
+            <div class="avatar">👤</div>
+            <h2 id="username">Загрузка...</h2>
+            <p id="balance">Баланс: 1000 💰</p>
+        </section>
+
+        <section class="friends">
+            <h3>👥 Друзья</h3>
+            <ul id="friends-list"></ul>
+            <button class="btn-primary" onclick="addFriend()">+ Добавить друга</button>
+            <button class="btn-secondary" onclick="inviteGame()">Пригласить в игру</button>
+        </section>
+
+        <section class="game">
+            <h3>🎯 Текущая игра</h3>
+            <div id="game-area">Выбери друга для матча!</div>
+            <button class="btn-game" onclick="startGame()">Начать битву</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
